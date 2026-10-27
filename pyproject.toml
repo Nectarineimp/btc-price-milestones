@@ -5,6 +5,8 @@ description = "Price Milestone analysis"
 authors = [
     {name = "Peter Mancini",email = "Nectarineimp@users.noreply.github.com"}
 ]
+package-mode = false
+
 license = "MIT"
 readme = "README.md"
 requires-python = ">=3.12"
