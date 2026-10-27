@@ -1,0 +1,20 @@
+[project]
+name = "btc-price-milestones"
+version = "0.1.0"
+description = "Price Milestone analysis"
+authors = [
+    {name = "Peter Mancini",email = "Nectarineimp@users.noreply.github.com"}
+]
+license = "MIT"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "pandas (>=3.1.0,<4.0.0)",
+    "numpy (>=2.5.4,<3.0.0)",
+    "requests (>=2.34.2,<3.0.0)"
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
