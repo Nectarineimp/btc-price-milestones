@@ -1,0 +1,10 @@
+milestone,first_touch_raw,sustained_touch,era_raw,era_sustained,cumulative_days_raw,cumulative_days_sustained,delta_days_raw,delta_days_sustained
+0.001,2009-10-12,2009-11-09,Era 1: Spot & Hobbyist,Era 1: Spot & Hobbyist,7,35,,
+0.01,2010-02-20,2010-03-20,Era 1: Spot & Hobbyist,Era 1: Spot & Hobbyist,138,166,131.0,131.0
+0.1,2010-10-13,2010-11-15,Era 1: Spot & Hobbyist,Era 1: Spot & Hobbyist,373,406,235.0,240.0
+1.0,2011-02-09,2011-05-13,Era 1: Spot & Hobbyist,Era 1: Spot & Hobbyist,492,585,119.0,179.0
+10.0,2011-06-02,2011-06-29,Era 1: Spot & Hobbyist,Era 1: Spot & Hobbyist,605,632,113.0,47.0
+100.0,2013-04-01,2013-05-16,Era 1: Spot & Hobbyist,Era 1: Spot & Hobbyist,1274,1319,669.0,687.0
+1000.0,2013-11-28,2017-03-11,Era 1: Spot & Hobbyist,Era 2: Offshore Derivatives,1515,2714,241.0,1395.0
+10000.0,2017-12-01,2017-12-28,Era 2: Offshore Derivatives,Era 2: Offshore Derivatives,2979,3006,1464.0,292.0
+100000.0,2024-12-08,2025-06-05,Era 4: Regulated Spot ETFs & Sovereign Macro,Era 4: Regulated Spot ETFs & Sovereign Macro,5543,5722,2564.0,2716.0

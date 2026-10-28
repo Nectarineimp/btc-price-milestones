@@ -1,0 +1,4 @@
+Progression,Sample (N),PowerLaw Scaling Exponent (beta),PowerLaw R2,PowerLaw AIC,PowerLaw Proj Date ($1M),Logistic Proj Date ($1M),Logistic R2
+Decadic,9,4.101,0.9387,-13.87,2042-07-14,2034-04-09,0.9967
+Euler,19,4.062,0.9516,-41.24,2044-03-03,2034-11-23,0.9877
+Binary,27,4.091,0.9508,-60.99,2044-02-01,2036-04-09,0.9546

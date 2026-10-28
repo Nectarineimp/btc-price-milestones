@@ -1,0 +1,20 @@
+milestone,first_touch_raw,sustained_touch,era_raw,era_sustained,cumulative_days_raw,cumulative_days_sustained,delta_days_raw,delta_days_sustained
+0.001,2009-10-12,2009-11-09,Era 1: Spot & Hobbyist,Era 1: Spot & Hobbyist,7,35,,
+0.0027,2009-11-06,2009-12-04,Era 1: Spot & Hobbyist,Era 1: Spot & Hobbyist,32,60,25.0,25.0
+0.0074,2010-01-14,2010-02-10,Era 1: Spot & Hobbyist,Era 1: Spot & Hobbyist,101,128,69.0,68.0
+0.0201,2010-03-14,2010-04-10,Era 1: Spot & Hobbyist,Era 1: Spot & Hobbyist,160,187,59.0,59.0
+0.0546,2010-05-25,2010-06-22,Era 1: Spot & Hobbyist,Era 1: Spot & Hobbyist,232,260,72.0,73.0
+0.1484,2010-10-26,2010-11-23,Era 1: Spot & Hobbyist,Era 1: Spot & Hobbyist,386,414,154.0,154.0
+0.4034,2011-01-21,2011-02-18,Era 1: Spot & Hobbyist,Era 1: Spot & Hobbyist,473,501,87.0,87.0
+1.0966,2011-04-17,2011-05-15,Era 1: Spot & Hobbyist,Era 1: Spot & Hobbyist,559,587,86.0,86.0
+2.981,2011-04-30,2011-05-28,Era 1: Spot & Hobbyist,Era 1: Spot & Hobbyist,572,600,13.0,13.0
+8.1031,2011-05-13,2011-06-22,Era 1: Spot & Hobbyist,Era 1: Spot & Hobbyist,585,625,13.0,25.0
+22.0265,2011-06-07,2013-03-07,Era 1: Spot & Hobbyist,Era 1: Spot & Hobbyist,610,1249,25.0,624.0
+59.8741,2013-03-20,2013-04-16,Era 1: Spot & Hobbyist,Era 1: Spot & Hobbyist,1262,1289,652.0,40.0
+162.7548,2013-04-07,2013-11-16,Era 1: Spot & Hobbyist,Era 1: Spot & Hobbyist,1280,1503,18.0,214.0
+442.4134,2013-11-17,2013-12-14,Era 1: Spot & Hobbyist,Era 1: Spot & Hobbyist,1504,1531,224.0,28.0
+1202.6043,2017-03-01,2017-05-16,Era 2: Offshore Derivatives,Era 2: Offshore Derivatives,2704,2780,1200.0,1249.0
+3269.0174,2017-08-07,2017-09-03,Era 2: Offshore Derivatives,Era 2: Offshore Derivatives,2863,2890,159.0,110.0
+8886.1105,2017-11-26,2017-12-23,Era 2: Offshore Derivatives,Era 2: Offshore Derivatives,2974,3001,111.0,111.0
+24154.9528,2020-12-25,2021-01-22,Era 3: Corporate & Macro Balance Sheets,Era 3: Corporate & Macro Balance Sheets,4099,4127,1125.0,1126.0
+65659.9691,2021-10-20,2024-06-12,Era 3: Corporate & Macro Balance Sheets,Era 4: Regulated Spot ETFs & Sovereign Macro,4398,5364,299.0,1237.0

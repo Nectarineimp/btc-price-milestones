@@ -1,0 +1,28 @@
+milestone,first_touch_raw,sustained_touch,era_raw,era_sustained,cumulative_days_raw,cumulative_days_sustained,delta_days_raw,delta_days_sustained
+0.001,2009-10-12,2009-11-09,Era 1: Spot & Hobbyist,Era 1: Spot & Hobbyist,7,35,,
+0.002,2009-10-27,2009-11-24,Era 1: Spot & Hobbyist,Era 1: Spot & Hobbyist,22,50,15.0,15.0
+0.004,2009-11-25,2009-12-23,Era 1: Spot & Hobbyist,Era 1: Spot & Hobbyist,51,79,29.0,29.0
+0.008,2010-01-22,2010-02-19,Era 1: Spot & Hobbyist,Era 1: Spot & Hobbyist,109,137,58.0,58.0
+0.016,2010-03-05,2010-04-02,Era 1: Spot & Hobbyist,Era 1: Spot & Hobbyist,151,179,42.0,42.0
+0.032,2010-04-08,2010-05-05,Era 1: Spot & Hobbyist,Era 1: Spot & Hobbyist,185,212,34.0,33.0
+0.064,2010-06-14,2010-07-11,Era 1: Spot & Hobbyist,Era 1: Spot & Hobbyist,252,279,67.0,67.0
+0.128,2010-10-25,2010-11-22,Era 1: Spot & Hobbyist,Era 1: Spot & Hobbyist,385,413,133.0,134.0
+0.256,2010-11-05,2011-01-22,Era 1: Spot & Hobbyist,Era 1: Spot & Hobbyist,396,474,11.0,61.0
+0.512,2011-01-31,2011-02-28,Era 1: Spot & Hobbyist,Era 1: Spot & Hobbyist,483,511,87.0,37.0
+1.024,2011-02-11,2011-05-14,Era 1: Spot & Hobbyist,Era 1: Spot & Hobbyist,494,586,11.0,75.0
+2.048,2011-04-28,2011-05-25,Era 1: Spot & Hobbyist,Era 1: Spot & Hobbyist,570,597,76.0,11.0
+4.096,2011-05-10,2011-06-06,Era 1: Spot & Hobbyist,Era 1: Spot & Hobbyist,582,609,12.0,12.0
+8.192,2011-05-25,2011-06-22,Era 1: Spot & Hobbyist,Era 1: Spot & Hobbyist,597,625,15.0,16.0
+16.384,2011-06-04,2013-02-18,Era 1: Spot & Hobbyist,Era 1: Spot & Hobbyist,607,1232,10.0,607.0
+32.768,2013-02-28,2013-03-28,Era 1: Spot & Hobbyist,Era 1: Spot & Hobbyist,1242,1270,635.0,38.0
+65.536,2013-03-21,2013-04-18,Era 1: Spot & Hobbyist,Era 1: Spot & Hobbyist,1263,1291,21.0,21.0
+131.072,2013-04-03,2013-11-10,Era 1: Spot & Hobbyist,Era 1: Spot & Hobbyist,1276,1497,13.0,206.0
+262.144,2013-11-06,2013-12-04,Era 1: Spot & Hobbyist,Era 1: Spot & Hobbyist,1493,1521,217.0,24.0
+524.288,2013-11-18,2013-12-16,Era 1: Spot & Hobbyist,Era 1: Spot & Hobbyist,1505,1533,12.0,12.0
+1048.576,2013-11-29,2017-03-17,Era 1: Spot & Hobbyist,Era 2: Offshore Derivatives,1516,2720,11.0,1187.0
+2097.152,2017-05-23,2017-06-20,Era 2: Offshore Derivatives,Era 2: Offshore Derivatives,2787,2815,1271.0,95.0
+4194.304,2017-08-14,2017-10-26,Era 2: Offshore Derivatives,Era 2: Offshore Derivatives,2870,2943,83.0,128.0
+8388.608,2017-11-25,2017-12-22,Era 2: Offshore Derivatives,Era 2: Offshore Derivatives,2973,3000,103.0,57.0
+16777.216,2017-12-07,2020-12-14,Era 2: Offshore Derivatives,Era 3: Corporate & Macro Balance Sheets,2985,4088,12.0,1088.0
+33554.432,2021-01-05,2021-02-27,Era 3: Corporate & Macro Balance Sheets,Era 3: Corporate & Macro Balance Sheets,4110,4163,1125.0,75.0
+67108.864,2021-11-08,2024-11-22,Era 3: Corporate & Macro Balance Sheets,Era 4: Regulated Spot ETFs & Sovereign Macro,4417,5527,307.0,1364.0
