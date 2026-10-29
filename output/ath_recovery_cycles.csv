@@ -1,0 +1,17 @@
+cycle_id,origin_era,exit_era,ath_date,ath_price,trough_date,trough_price,recovery_date,max_drawdown_pct,days_to_trough,days_trough_to_recovery,total_underwater_days,recovery_multiple,annualized_recovery_velocity_pct,status
+1,Era 1: Spot & Hobbyist,Era 1: Spot & Hobbyist,2010-07-18,0.09,2010-07-25,0.05,2010-10-09,-41.12,7,76.0,83,1.7,1175.3,Recovered
+2,Era 1: Spot & Hobbyist,Era 1: Spot & Hobbyist,2010-11-06,0.4,2010-12-09,0.2,2011-01-21,-50.12,33,43.0,76,2.0,36730.4,Recovered
+3,Era 1: Spot & Hobbyist,Era 1: Spot & Hobbyist,2011-02-12,1.08,2011-04-04,0.68,2011-04-17,-36.96,51,13.0,64,1.59,42684875.5,Recovered
+4,Era 1: Spot & Hobbyist,Era 1: Spot & Hobbyist,2011-06-08,29.03,2011-11-18,2.11,2013-02-19,-92.75,163,459.0,622,13.79,706.9,Recovered
+5,Era 1: Spot & Hobbyist,Era 1: Spot & Hobbyist,2013-04-09,230.68,2013-07-06,66.34,2013-11-05,-71.24,88,122.0,210,3.48,4072.2,Recovered
+6,Era 1: Spot & Hobbyist,Era 2: Offshore Derivatives,2013-12-04,1134.93,2015-01-14,175.64,2017-02-23,-84.52,406,771.0,1177,6.46,142.0,Recovered
+7,Era 2: Offshore Derivatives,Era 2: Offshore Derivatives,2017-03-03,1289.36,2017-03-24,935.06,2017-04-26,-27.48,21,33.0,54,1.38,3402.6,Recovered
+8,Era 2: Offshore Derivatives,Era 2: Offshore Derivatives,2017-06-11,2974.21,2017-07-16,1910.75,2017-08-05,-35.76,35,20.0,55,1.56,323104.8,Recovered
+9,Era 2: Offshore Derivatives,Era 2: Offshore Derivatives,2017-09-01,4918.17,2017-09-14,3247.47,2017-10-12,-33.97,13,28.0,41,1.51,22359.7,Recovered
+10,Era 2: Offshore Derivatives,Era 3: Corporate & Macro,2017-12-16,19640.51,2018-12-15,3185.07,2020-11-30,-83.78,364,716.0,1080,6.17,152.9,Recovered
+11,Era 3: Corporate & Macro,Era 3: Corporate & Macro,2021-01-08,40775.4,2021-01-27,30358.93,2021-02-08,-25.55,19,12.0,31,1.34,793134.1,Recovered
+12,Era 3: Corporate & Macro,Era 3: Corporate & Macro,2021-04-13,63445.64,2021-07-20,29766.66,2021-10-19,-53.08,98,91.0,189,2.13,1985.5,Recovered
+13,Era 3: Corporate & Macro,Era 4: ETFs & Sovereign Macro,2021-11-08,67541.76,2022-11-09,15758.29,2024-03-04,-76.67,366,481.0,847,4.29,202.0,Recovered
+14,Era 4: ETFs & Sovereign Macro,Era 4: ETFs & Sovereign Macro,2024-03-13,73081.58,2024-09-06,53838.95,2024-11-06,-26.33,177,61.0,238,1.36,523.2,Recovered
+15,Era 4: ETFs & Sovereign Macro,Era 4: ETFs & Sovereign Macro,2024-12-17,106115.91,2025-04-08,76351.43,2025-05-20,-28.05,112,42.0,154,1.39,1650.9,Recovered
+16,Era 4: ETFs & Sovereign Macro,Ongoing,2025-10-06,124824.45,2026-02-05,63494.69,,-49.13,122,,229,1.97,,Ongoing
