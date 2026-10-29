@@ -1,0 +1,5 @@
+Era,Sample Size (N),Exponents (beta),Model Fit (R2),Base (Anchor Price),10x Journey Duration (days),10x Passage Date,Isolated Proj Date ($1M),Data Used
+Era 1: Spot & Hobbyist,6,3.578,0.8819,$0.00,122 days,2010-02-04,2067-11-06,Sustained P95
+Era 2: Offshore Derivatives,5,4.466,0.9888,$430.00,617 days,2017-09-09,2021-09-22,Sustained P95
+Era 3: Corporate & Macro,6,2.051,0.8807,"$7,200.00",628 days,2021-09-20,2026-03-15,Sustained P95
+Era 4: ETFs & Sovereign Macro,3,0.339,0.9859,"$44,000.00","45,211 days",2147-10-14,Extrapolates Out Of Century,Sustained P95
