@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-btc-price-milestones: Configuration and Regime Metadata
+btc-price-milestones: Independent Multi-Era Configuration
 """
 
 from dataclasses import dataclass
@@ -17,72 +17,59 @@ OUTPUT_DIR = BASE_DIR / "output"
 
 
 @dataclass(frozen=True)
-class MarketEra:
+class IndependentMarketEra:
+    id: int
     name: str
     description: str
     start_date: pd.Timestamp
     end_date: pd.Timestamp
+    anchor_price: float      # The pricing baseline at t0 for this era's model
+    target_milestones: list[float]
 
 
 MARKET_ERAS = [
-    MarketEra(
+    IndependentMarketEra(
+        id=1,
         name="Era 1: Spot & Hobbyist",
-        description="Early mining, peer-to-peer transfers, Mt. Gox, zero institutional rails.",
+        description="P2P, early mining, Mt. Gox, zero institutional rails.",
         start_date=pd.Timestamp("2009-10-05"),
         end_date=pd.Timestamp("2015-12-31"),
+        anchor_price=0.00099,
+        target_milestones=[0.001, 0.01, 0.1, 1.0, 10.0, 100.0, 1000.0]
     ),
-    MarketEra(
+    IndependentMarketEra(
+        id=2,
         name="Era 2: Offshore Derivatives",
-        description="BitMEX perpetual swaps, CME futures launch, initial prop trading entry.",
+        description="Synthetic leverage, perp swaps, CME futures launch, fork resolution.",
         start_date=pd.Timestamp("2016-01-01"),
         end_date=pd.Timestamp("2019-12-31"),
+        anchor_price=430.0,  # ~Start of 2016 close
+        target_milestones=[1000.0, 2000.0, 4000.0, 8000.0, 10000.0]  # Focus on key inflection triggers
     ),
-    MarketEra(
-        name="Era 3: Corporate & Macro Balance Sheets",
-        description="MicroStrategy, Tesla, sovereign legal tender, central bank stimulus.",
+    IndependentMarketEra(
+        id=3,
+        name="Era 3: Corporate & Macro",
+        description="Balance sheets, stimulus, retail prime brokerage, FTX/3AC credit cycles.",
         start_date=pd.Timestamp("2020-01-01"),
         end_date=pd.Timestamp("2023-12-31"),
+        anchor_price=7200.0,  # ~Start of 2020 close
+        target_milestones=[10000.0, 20000.0, 30000.0, 40000.0, 50000.0, 60000.0]
     ),
-    MarketEra(
-        name="Era 4: Regulated Spot ETFs & Sovereign Macro",
-        description="US spot ETFs (IBIT, FBTC), options clearing, national reserve allocations.",
+    IndependentMarketEra(
+        id=4,
+        name="Era 4: ETFs & Sovereign Macro",
+        description="Spot ETFs, RIA allocations, options clearing, geopolitical hedging.",
         start_date=pd.Timestamp("2024-01-01"),
-        end_date=pd.Timestamp("2035-12-31"),
-    ),
+        end_date=pd.Timestamp("2035-12-31"),  # Track current regime forward
+        anchor_price=44000.0,  # ETF launch era baseline
+        target_milestones=[50000.0, 80000.0, 100000.0, 250000.0, 500000.0, 1000000.0]
+    )
 ]
 
-STRUCTURAL_SHOCKS = {
-    "Mt. Gox Insolvency": pd.Timestamp("2014-02-07"),
-    "Blocksize Civil War / BCH Fork": pd.Timestamp("2017-08-01"),
-    "COVID Liquidity Shock": pd.Timestamp("2020-03-12"),
-    "FTX Collapse & Credit Contagion": pd.Timestamp("2022-11-11"),
-    "US Spot ETF Inception": pd.Timestamp("2024-01-11"),
-}
 
-
-def get_market_era(dt: pd.Timestamp) -> str:
-    """Classifies a given timestamp into one of the 4 defined structural eras."""
+def get_market_era(dt: pd.Timestamp) -> IndependentMarketEra:
+    """Classifies a given timestamp into its corresponding Independent Market Era."""
     for era in MARKET_ERAS:
         if era.start_date <= dt <= era.end_date:
-            return era.name
-    return "Era 4: Regulated Spot ETFs & Sovereign Macro"
-
-
-def generate_milestone_grid(progression: str, start_price: float = 0.001, end_price: float = 100000.0) -> list[float]:
-    """
-    Generates target price thresholds for sensitivity analysis:
-      - 'decadic': Base-10 orders of magnitude (10^k)
-      - 'euler': e-folds (~2.718x per step, continuously compounded 1 nat return)
-      - 'binary': Power-of-2 doublings (2x per step)
-    """
-    if progression == "decadic":
-        powers = np.arange(np.log10(start_price), np.log10(end_price) + 0.001, 1.0)
-        return list(np.round(10.0 ** powers, 4))
-    elif progression == "euler":
-        powers = np.arange(np.log(start_price), np.log(end_price) + 0.001, 1.0)
-        return list(np.round(np.exp(powers), 4))
-    elif progression == "binary":
-        powers = np.arange(np.log2(start_price), np.log2(end_price) + 0.001, 1.0)
-        return list(np.round(2.0 ** powers, 4))
-    else:
-        raise ValueError(f"Unknown progression: {progression}. Choose 'decadic', 'euler', or 'binary'.")
+            return era
+    return MARKET_ERAS[-1]  # Defaults to latest if out of range
